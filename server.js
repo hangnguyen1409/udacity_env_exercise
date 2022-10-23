@@ -4,9 +4,9 @@ function sleep(ms) {
 }
 
 async function main() {
-  const username = process.env.DOCKER_USERNAME
+  const name = process.env.NAME;
   while (true) {
-    console.log(`Microservices rock! ${username}`);
+    console.log(`${name} rock!`);
     await sleep(5000);
   }
 
